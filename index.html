@@ -18,6 +18,7 @@
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
+    font-variant-numeric: lining-nums;
     background: var(--bg);
     color: var(--text);
     font-family: "Source Sans 3", system-ui, sans-serif;
@@ -40,14 +41,16 @@
     aspect-ratio: 16 / 10;
     border-radius: 50% 50% 0 0 / 70% 70% 0 0;
     background:
-      radial-gradient(ellipse at 50% 100%, rgba(242,166,90,0.95) 0%, rgba(242,166,90,0.45) 18%, transparent 45%),
-      linear-gradient(180deg, #d9cfd8 0%, #c9a99e 45%, #8a5a43 75%, #1a1210 100%);
+      linear-gradient(180deg, rgba(11,10,9,0.15) 0%, rgba(11,10,9,0.35) 45%, rgba(11,10,9,0.75) 100%),
+      url("hero.jpg") center 30% / cover no-repeat,
+      #3a2a22;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    padding: 24px;
-    /* To use the original photo, upload it as hero.jpg next to this file and uncomment: */
-    /* background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("hero.jpg") center / cover; */
+    padding: 24px 24px 12%;
+  }
+  @media (max-width: 600px) {
+    .arch { aspect-ratio: 4 / 5; padding-bottom: 10%; }
   }
   .arch h1 {
     font-family: "Playfair Display", Georgia, serif;
@@ -116,7 +119,8 @@
 <footer>
   <p>Square1 is an initiative of <a href="https://mellennialls.com/">Mellennialls Holdings LLC</a>.<br>
   Informational site only.<br>
-  Copyright &copy; 2026 Mellennialls Holdings LLC. All Rights Reserved.</p>
+  Copyright &copy; 2026 Mellennialls Holdings LLC. All Rights Reserved.<br>
+  <span style="opacity:.7">Photo by <a href="https://unsplash.com/@henkaznelson?utm_source=square1&amp;utm_medium=referral">Hen Kaznelson</a> on <a href="https://unsplash.com/?utm_source=square1&amp;utm_medium=referral">Unsplash</a></span></p>
 </footer>
 
 </body>
