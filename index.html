@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Square1</title>
+<meta name="description" content="Square1 is an early-stage nonprofit initiative of Mellennialls Holdings LLC focused on community care. Currently in foundational planning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0b0a09;
+    --text: #f3efe9;
+    --muted: #b9b2a8;
+    --line: #2a2622;
+    --sun: #f2a65a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Sans 3", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  header {
+    text-align: center;
+    padding: 28px 16px 0;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .hero {
+    position: relative;
+    max-width: 960px;
+    margin: 40px auto 0;
+    padding: 0 16px;
+  }
+  .arch {
+    aspect-ratio: 16 / 10;
+    border-radius: 50% 50% 0 0 / 70% 70% 0 0;
+    background:
+      radial-gradient(ellipse at 50% 100%, rgba(242,166,90,0.95) 0%, rgba(242,166,90,0.45) 18%, transparent 45%),
+      linear-gradient(180deg, #d9cfd8 0%, #c9a99e 45%, #8a5a43 75%, #1a1210 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    /* To use the original photo, upload it as hero.jpg next to this file and uncomment: */
+    /* background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("hero.jpg") center / cover; */
+  }
+  .arch h1 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(1.6rem, 4vw, 2.6rem);
+    text-align: center;
+    max-width: 22ch;
+    text-shadow: 0 2px 18px rgba(0,0,0,0.55);
+  }
+  .tag {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+  }
+  section {
+    max-width: 640px;
+    margin: 72px auto 0;
+    padding: 0 16px;
+    text-align: center;
+  }
+  h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  .rule { width: 48px; height: 1px; background: var(--line); margin: 0 auto 24px; }
+  section p { color: var(--muted); margin-bottom: 12px; }
+  a { color: var(--text); }
+  footer {
+    max-width: 960px;
+    margin: 96px auto 0;
+    padding: 28px 16px 40px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>SQUARE1</header>
+
+<div class="hero">
+  <div class="arch">
+    <h1>Square1 is an early-stage nonprofit initiative focused on community care.</h1>
+  </div>
+  <p class="tag">Early-Stage Nonprofit Initiative</p>
+</div>
+
+<section>
+  <h2>Current Status</h2>
+  <div class="rule"></div>
+  <p>Square1 is currently in foundational planning.</p>
+  <p>There are no active programs, services, intake, or fundraising efforts at this time.<br>This website is informational only.</p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="rule"></div>
+  <p>For general inquiries:<br><a href="mailto:hellosquareoneproject@gmail.com">hellosquareoneproject@gmail.com</a></p>
+</section>
+
+<footer>
+  <p>Square1 is an initiative of <a href="https://mellennialls.com/">Mellennialls Holdings LLC</a>.<br>
+  Informational site only.<br>
+  Copyright &copy; 2026 Mellennialls Holdings LLC. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
